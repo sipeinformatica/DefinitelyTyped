@@ -14,6 +14,7 @@ declare class Gantt {
 
 declare namespace Gantt {
     interface Task {
+        custom_index: number,
         id: string;
         name: string;
         start: string;
@@ -48,5 +49,5 @@ declare namespace Gantt {
         on_view_change?: ((mode: viewMode) => void) | undefined;
     }
 
-    type viewMode = 'Quarter Day' | 'Half Day' | 'Day' | 'Week' | 'Month';
+    type viewMode = 'Quarter Day' | 'Half Day' | 'Day' | 'Week_Day' | 'Week' | 'Month';
 }

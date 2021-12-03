@@ -2,6 +2,7 @@ import Gantt from 'frappe-gantt';
 
 const tasks = [
     {
+        custom_index: 1,
         id: 'Task 1',
         name: 'Redesign website',
         start: '2016-12-28',
